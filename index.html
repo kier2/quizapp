@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App Javascript</title>
+</head>
+<body>
+    <div class="score">0</div>
+    <section class="quiz-wrapper">
+        <div class="quiz-result" style="display: none;">
+            <h2>congratulations!</h2>
+
+            <p class="result-msg">You're final score
+                <strong></strong> out of <strong></strong>.
+            </p>
+        </div>
+        <div class="quiz-wrapper-inner">
+            <div class="quiz-questtion">
+                <header></header>
+            </div>
+            <div class="quiz-choices">
+                <label class="choices_a">
+                    <input class="choices" type="radio" name="ans[]" value>
+                    <span></span>
+                </label>
+                <label class="choices_b">
+                    <input class="choices" type="radio" name="ans[]" value>
+                    <span></span>
+                </label>
+                <label class="choices_c">
+                    <input class="choices" type="radio" name="ans[]" value>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <button class="btn submit-btn" id="submit" type="button">Submit</button>
+        <button class="btn refresh-btn" id="refresh-btn" type="button" style="display: none;">Take Quiz Again</button>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(231, 224, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+.score{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-weight: 500;
+}
+.score > .star{
+    font-size: 3rem;
+    background: rgba(51, 51, 51, 0.824);
+    color: rgb(37, 255, 139);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-wrapper{
+    background: #fff;
+    width: 40%;
+    box-shadow: 0 5px 8px 1px rgba(192, 192, 192, 0.69);
+    border-radius: 5px;
+}
+
+.quiz-wrapper .quiz-wrapper-inner,
+.quiz-wrapper .quiz-result{
+    padding: 1rem;
+}
+.quiz-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.quiz-result h2{
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.quiz-result p{
+    /* font-size: 1.5rem; */
+    font-size: 14px;
+    line-height: 23px;
+    margin-bottom: 1rem;
+}
+
+.quiz-questtion header{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.quiz-choices > *{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: .3rem;
+}
+.btn{
+    width: 100%;
+    border: 0;
+    padding: .8rem 0;
+    background: #6715ff;
+    color: #fff;
+    font-weight: 600;
+    transition: ease 400ms;
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:hover{
+    opacity: .8;
+}
+
+@media(max-width: 720px){
+    .quiz-wrapper{
+        width: 60%;
+    }
+}
